@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program, initializes input n to generate a random number.
+ * main - Entry point of the program,
+*initializes input n to generate a random number.
  *
  * Return: Always 0 (Success).
  */
