@@ -12,17 +12,19 @@
 
 int main(void)
 {
-	int tat = 0;
 	char mib = 'a';
 	char bim = 'A';
 
-	while (tat < 26)
+	while (mib <= 'z')
 	{
 		putchar(mib);
-		putchar(bim);
 		mib++;
+	}
+
+	while (bim <= 'Z')
+	{
+		putchar(bim);
 		bim++;
-		tat++;
 	}
 
 	putchar('\n');
