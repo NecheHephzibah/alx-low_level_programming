@@ -12,15 +12,15 @@
 int main(void)
 {
 
-    int count = 0;
+	int count = 0;
 
-    while (count < 10)
-    {
-        putchar(count + '0');
-        count++;
-    }
+	while (count < 10)
+	{
+		putchar(count + '0');
+		count++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
