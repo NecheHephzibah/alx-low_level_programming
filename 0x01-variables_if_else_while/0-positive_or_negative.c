@@ -5,7 +5,8 @@
 
 
 /**
- * main - Entry point of the program, initializes input n to generate random number.
+ * main - Entry point of the program, 
+ * initializes input n to generate random number.
  *
  * Return: Always 0 (Success).
  */
