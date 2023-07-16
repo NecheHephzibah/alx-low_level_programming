@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point of the program,
-* initializes inputs mib and bim to print out 
+* initializes inputs mib and bim to print out
 *the alphabeth in lowercase and uppercase.
  *
  * Return: Always 0 (Success).
