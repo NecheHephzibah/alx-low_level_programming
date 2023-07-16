@@ -2,15 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-
-
 /**
- * main - Entry point of the program, 
- * initializes input n to generate random number.
+ * main - Entry point of the program,
+ * initializes input n to generate a random number.
  *
  * Return: Always 0 (Success).
  */
-
 int main(void)
 {
     int n;
@@ -31,6 +28,6 @@ int main(void)
         printf("0 is zero\n");
     }
 
-
     return (0);
 }
+
