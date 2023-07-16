@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point of the program,
-initializes input n to generate a random number.
+*initializes input mib and tat to print the
+*alphabeth.
  *
  * Return: Always 0 (Success).
  */
