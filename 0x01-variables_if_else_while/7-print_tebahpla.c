@@ -13,7 +13,7 @@ int main(void)
 	char mib = 'z';
 	int tat = 26;
 
-	while (tat > 1)
+	while (tat > 0)
 	{
 		putchar(mib);
 		mib--;
