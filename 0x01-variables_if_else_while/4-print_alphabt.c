@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point of the program,
- * initializes inputs mib to print out 
+ * initializes inputs mib to print out
  * the alphabet in lowercase without q and e.
  *
  * Return: Always 0 (Success).
