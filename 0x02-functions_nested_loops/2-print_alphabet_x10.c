@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* print_alphabet - Entry point to the program, function print_alphabeth
-* prints alphabet a - z in lowercase.
+* print_alphabet_x10 - Entry point to the program,
+* prints alphabet a - z in lowercase ten times.
 *
 * Description: program that prints out the alphabeth
 * in lowercase.
