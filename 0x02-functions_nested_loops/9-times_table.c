@@ -13,7 +13,7 @@ void times_table(void)
 		{
 			product = row * col;
 
-            if (col == 0)
+			if (col == 0)
 			{
 				_putchar('0');
 			}
