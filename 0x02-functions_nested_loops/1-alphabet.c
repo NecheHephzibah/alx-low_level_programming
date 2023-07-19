@@ -2,7 +2,8 @@
 
 
 /**
-* void - Entry point to the program.
+* print_alphabet - Entry point to the program, function print_alphabeth
+* prints alphabet a - z in lowercase.
 *
 * Description: program that prints out the alphabeth
 * in lowercase.
