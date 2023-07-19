@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 {
 
 	char miber = 'a';
-	int hugo = '0';
+	int hugo = 0;
 
 	while (hugo < 10)
 	{
@@ -29,7 +29,6 @@ void print_alphabet_x10(void)
 			laurent++;
 		}
 		_putchar('\n');
-		miber++;
 		hugo++;
 	}
 }
