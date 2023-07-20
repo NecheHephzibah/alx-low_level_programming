@@ -17,7 +17,7 @@ int main(void)
 		jub = kub;
 		kub = next;
 
-		if (kub < 98)
+		if (hub < 98)
 		{
 			printf("%lu", next);
 		}
