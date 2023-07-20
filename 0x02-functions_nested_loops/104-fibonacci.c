@@ -16,11 +16,10 @@ int main(void)
 		next = jub + kub;
 		jub = kub;
 		kub = next;
-		printf("%lu", next);
 
-		if (hub < 98)
+		if (kub < 98)
 		{
-			printf(", ");
+			printf("%lu", next);
 		}
 		hub++;
 	}
