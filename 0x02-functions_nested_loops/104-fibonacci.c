@@ -9,16 +9,16 @@
 int main(void)
 {
 	int hub = 0;
-	unsigned long long int jub = 0, kub = 1, next = 0;
+	unsigned long int jub = 0, kub = 1, next = 0;
 
 	while (hub < 98)
 	{
 		next = jub + kub;
 		jub = kub;
 		kub = next;
-		printf("%llu", next);
+		printf("%lu", next);
 
-		if (hub < 97)
+		if (hub < 98)
 		{
 			printf(", ");
 		}
