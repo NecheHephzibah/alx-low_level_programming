@@ -15,21 +15,15 @@ void print_to_98(int n)
 
 	while (n != 98)
 	{
-		if (n < 10)
-		{
-			_putchar(n + '0');
-		}
-		else
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-		}
-
+		_putchar((n / 100) + '0');
+		_putchar(((n / 10) % 10) + '0');
+		_putchar((n % 10) + '0');
 		_putchar(',');
 		_putchar(' ');
 
 		n += increment;
 	}
+
 
 	_putchar('9');
 	_putchar('8');
