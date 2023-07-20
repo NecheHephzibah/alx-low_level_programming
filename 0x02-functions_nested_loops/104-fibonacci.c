@@ -11,7 +11,7 @@ int main(void)
 	int hub = 0;
 	unsigned long int jub = 0, kub = 1, next = 0;
 
-	while (hub < 98)
+	while (hub < 1024)
 	{
 		next = jub + kub;
 		jub = kub;
