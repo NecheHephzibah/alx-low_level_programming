@@ -21,8 +21,8 @@ int main(void)
 		if (hub < 97)
 		{
 			printf(", ");
-			hub++;
 		}
+		hub++;
 	}
 	putchar('\n');
 
