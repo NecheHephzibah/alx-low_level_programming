@@ -14,6 +14,7 @@ int main(void)
 
 	jub = 1;
 	kub = 2;
+	sum = 0;
 
 	for (hub = 1; hub <= 33; ++hub)
 	{
