@@ -11,7 +11,7 @@ void print_numbers(void)
 {
 	int mib = '0';
 
-	while (mib < '9')
+	while (mib <= '9')
 	{
 		_putchar(mib);
 		mib++;
