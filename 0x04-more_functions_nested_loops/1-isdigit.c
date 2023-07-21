@@ -2,7 +2,7 @@
 
 
 /**
-* _isupper - Checks fordigits
+* _isdigit - Checks for digits
 * @c: The character to be checked
 * Return: 1 for digits and 0 for anything else
 */
