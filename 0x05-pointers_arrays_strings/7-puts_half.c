@@ -25,7 +25,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		half_length = (length - 1) / 2;
+		half_length = (length + 1) / 2;
 	}
 
 	/* to print the second half of the string*/
