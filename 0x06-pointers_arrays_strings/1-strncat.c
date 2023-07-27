@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
-* _strncat - function that concatenates two strings. 
+* _strncat - function that concatenates two strings.
 * @dest: destination buffer, where the concatenated string will be
 * stored..
 * @src: the source string that will be appended to the dest buffer.
@@ -15,5 +15,5 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);
-	return (dest);	
+	return (0);
 }
