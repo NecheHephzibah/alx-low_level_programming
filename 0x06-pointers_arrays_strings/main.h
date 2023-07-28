@@ -21,4 +21,6 @@ char *cap_string(char *str);
 
 char *leet(char *n);
 
+char *rot13(char *s);
+
 #endif
