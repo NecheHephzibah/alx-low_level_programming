@@ -47,5 +47,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (digit == size_r)
 		return (0);
 	*(r + digit) = '\0';
+	rev_string(r);
 	return (r);
 }
