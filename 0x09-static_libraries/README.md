@@ -1,0 +1,1 @@
+0x09-static_libraries. TASKS ON STATIC LIBRARIES
