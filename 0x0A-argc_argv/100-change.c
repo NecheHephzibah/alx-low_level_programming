@@ -28,7 +28,9 @@ int main(int argc, char *argv[])
 
 	if (cents < 0)
 	{
-		printf("0\n");
+		minimumCoins = 0;
+		printf("%d\n", minimumCoins);
+		return (0);
 	}
 
 	for (i = 0; i < numberCoins; i++)
