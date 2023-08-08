@@ -2,36 +2,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
-
 /**
 * main - entry point of my function
-* @argc: argument counter
-* @argv: argument vector which is an array pointer
+* @argc: Argument Counter
+* @argv: Argument Vector which is an array pointer to a string
 * Return: 0
 */
 
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int mib, summation;
 
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (mib = 1; mib < argc; mib++)
 		{
-			int j;
+			int jib;
 
-			for (j = 0; argv[i][j] != '\0'; j++)
+			for (jib= 0; argv[mib][jib] != '\0'; jib++)
 			{
-				if (!isdigit(argv[i][j]))
+				if (!isdigit(argv[mib][jib]))
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
-			sum += atoi(argv[i]);
+			summation += atoi(argv[mib]);
 		}
-		printf("%d\n", sum);
+		printf("%d\n", summation);
 	}
 	else
 	{
