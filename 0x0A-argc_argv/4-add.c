@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		{
 			int jib;
 
-			for (jib= 0; argv[mib][jib] != '\0'; jib++)
+			for (jib = 0; argv[mib][jib] != '\0'; jib++)
 			{
 				if (!isdigit(argv[mib][jib]))
 				{
