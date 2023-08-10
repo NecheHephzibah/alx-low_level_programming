@@ -16,12 +16,17 @@ char *str_concat(char *s1, char *s2)
 	int size;
 	char *zen;
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
 
-	size = (s1 != NULL ? strlen(s1) : 0) + (s2 != NULL ? strlen(s2) : 0) + 1;
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
+	size = strlen(s1) + strlen(s2) + 1;
 
 	zen = (char *) malloc(size * sizeof(char));
 
@@ -30,16 +35,8 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	zen[0] = '\0';
-
-	if (s1 != NULL)
-	{
-		strcat(zen, s1);
-	}
-	if (s2 != NULL)
-	{
-		strcat(zen, s2);
-	}
+	strcpy(zen, s1);
+	strcat(zen, s2);
 
 	return (zen);
 }
