@@ -31,7 +31,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("nil");
 		}
 
-		if (separator != NULL && mib < n - 1 && str != NULL)
+		if (mib < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
 		}
