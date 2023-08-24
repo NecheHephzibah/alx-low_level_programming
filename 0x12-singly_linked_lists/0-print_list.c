@@ -8,23 +8,34 @@
 
 size_t print_list(const list_t *h)
 {
-	int mib = 1;
+	int mib;
+	unsigned int len;
 
 	if (h == NULL)
 		return (0);
 
-	while (h->next != NULL)
+	for (mib = 1; h->next != NULL; mib++)
 	{
+		len = h->len;
 		if (h->str == NULL)
-			printf("[%u] %s\n", h->len, "(nil)");
-		else
 		{
-			printf("[%u] %s\n", h->len, h->str);
+			printf("[0] %s\n", "(nil)");
+			len = 0;
 		}
+		else
+			printf("[%u] %s\n", len, h->str);
 		h = h->next;
 	}
-	printf("[%u] %s\n", h->len, h->str);
-	mib++;
+
+	len = h->len;
+
+	if (h->str == NULL)
+	{
+		printf("[0] %s\n", "(nil)");
+		len = 0;
+	}
+	else
+		printf("[%u] %s\n", len, h->str);
 
 	return (mib);
 }
