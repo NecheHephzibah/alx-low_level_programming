@@ -2,7 +2,7 @@
 
 /**
 * list_len - function to return length of a list
-* @list_t: number of nodes
+*
 * @h: pointer to the first node
 * Return: number of nodes in the list
 */
