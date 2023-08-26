@@ -25,6 +25,9 @@ size_t print_list(const list_t *h);
 
 int nodeLength(const char *str);
 
+list_t *buildNode(const char *str);
+
+
 
 size_t list_len(const list_t *h);
 
