@@ -74,7 +74,7 @@ int nodeLength(const char *str)
 		return (0);
 
 	mib = 0;
-	while(str[mib] != '\0')
+	while (str[mib] != '\0')
 	{
 		mib++;
 	}
