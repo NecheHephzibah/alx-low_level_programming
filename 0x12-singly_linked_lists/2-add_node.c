@@ -36,7 +36,8 @@ list_t *add_node(list_t **head, const char *str)
 
 
 /**
-* nodelength - calls or get the length of a string, str
+* nodeLength - calls or get the length of a string, str
+* what else
 * @str: the string that it's length would be gotten
 * Return: length of str
 */
