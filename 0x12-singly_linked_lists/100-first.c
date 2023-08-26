@@ -1,6 +1,6 @@
 #include "lists.h"
 
-void initializerHephzibah(void) __attribute__ ((constructor));
+void initializer(void) __attribute__ ((constructor));
 
 /**
 * initializer - function that executes before the main function
