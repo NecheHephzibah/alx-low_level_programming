@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 		for (lengthB = _strlen(s2) - 1; lengthB >= 0; lengthB--)
 		{
 			numB = s2[lengthB] - '0';
-			take += result[lengthA +lengthB + 1] + (numA * numB);
+			take += result[lengthA + lengthB + 1] + (numA * numB);
 			result[lengthA + lengthB + 1] = take % 10;
 			take /= 10;
 		}
