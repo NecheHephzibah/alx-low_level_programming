@@ -2,17 +2,16 @@
 #include "dog.h"
 
 /**
- * init_dog -  a function that frees dogs.
- * @d: pointer to menbers of the struc
- * @name: name to initialize
- * @age: age, one of the members to 
- * @owner: owner, one of the members to a struct
+ * free_dog -  void free_dog(dog_t *d)
+ * @d: pointer to members of the struct
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void free_dog(dog_t *d)
 {
-	if (d == NULL)
-		d = malloc(sizeof(struct dog));
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
+
