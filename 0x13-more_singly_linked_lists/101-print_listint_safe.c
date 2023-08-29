@@ -4,7 +4,7 @@
 size_t print_listint_safe(const listint_t *head);
 
 /**
- * print_listint_safe -  function that prints a listint_t linked list.
+ * looped_listint_len -  function that prints a listint_t linked list.
  * @head: pointer to the first node
  * Return: the number of nodes in the list
  */
