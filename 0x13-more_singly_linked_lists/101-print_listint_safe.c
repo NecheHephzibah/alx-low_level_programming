@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 
+size_t print_listint_safe(const listint_t *head);
 
 /**
  * print_listint_safe -  function that prints a listint_t linked list.
@@ -9,24 +10,78 @@
  */
 
 
+size_t looped_listint_len(const listint_t *head)
+{
+	const listint_t *i, *j;
+	size_t nodes = 1;
+
+	if (head == NULL || head->next == NULL)
+		return (0);
+
+	i = head->next;
+	j = (head->next)->next;
+
+	while (j)
+	{
+		if (i == j)
+		{
+			i = head;
+			while (i != j)
+			{
+				nodes++;
+				i = i->next;
+				j = j->next;
+			}
+
+			i = i->next;
+			while (i != j)
+			{
+				nodes++;
+				i = i->next;
+			}
+
+			return (nodes);
+		}
+
+		i = i->next;
+		j = (j->next)->next;
+	}
+
+	return (0);
+}
+
+/**
+ * print_listint_safe - Prints a listint_t list safely.
+ * @head: A pointer to the head of the listint_t list.
+ *
+ * Return: The number of nodes in the list.
+ */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t count = 0;
-	const listint_t *current_node = head;
+	size_t nodes, index = 0;
 
-	while (current_node != NULL && count < 9999)
+	nodes = looped_listint_len(head);
+
+	if (nodes == 0)
 	{
-		printf("%d\n", current_node->n);
-		current_node = current_node->next;
-		count++;
+		for (; head != NULL; nodes++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
 	}
 
-	if (count == 9999)
+	else
 	{
-		printf("The list is too long to print safely.\n");
-		exit(98);
+		for (index = 0; index < nodes; index++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
+		}
+
+		printf("-> [%p] %d\n", (void *)head, head->n);
 	}
 
-	return count;
+	return (nodes);
 }
 
