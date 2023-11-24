@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * binary_to_unit - function that converts binary in string format to unsigned integers.
+ * binary_to_uint - converts binary in string format to unsigned integers.
  * @b: the user input which is in binary format goes here.
  * Return: result, the converted binary, now an integer.
- */ 
+ */
 
 
 unsigned int binary_to_uint(const char *b)
@@ -18,7 +18,8 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 		return (0);
 
-	for (length = 0; b[length] != '\0'; length++);
+	for (length = 0; b[length] != '\0'; length++)
+		;
 
 	for (i = length - 1; i >= 0; i--)
 	{
