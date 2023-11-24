@@ -1,8 +1,5 @@
-#include <math.h>
-#include "main.h"
 #include <stdio.h>
-
-int highestBitPosition(unsigned long int n);
+#include "main.h"
 
 /**
  * print_binary - converts decimal to binary.
@@ -10,57 +7,32 @@ int highestBitPosition(unsigned long int n);
  * Return: void.
  */
 
+
 void print_binary(unsigned long int n)
 {
 	unsigned long int mask;
 	int position;
-	int i;
 
-	if (n == 0)
+	mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	position = 0;
+
+	while (mask > 0)
 	{
-		_putchar('0');
-		return;
-	}
-
-	position = highestBitPosition(n);
-
-	for (i = position - 1; i >= 0; i--)
-	{
-		mask = 1UL << i;
-		if (n & mask)
+		if ((n & mask) == mask)
 		{
 			_putchar('1');
+			position = 1;
 		}
-		else
+		else if (position)
 		{
 			_putchar('0');
 		}
+
+		mask >>= 1;
 	}
-}
 
-/**
- * highestBitPosition - checks for the highest position where 1 can be found
- * @n: the input that will be checked.
- * Return: pos to the function calling it above.
- */
-
-int highestBitPosition(unsigned long int n)
-{
-	double logTwoN;
-	int floorLogTwoN;
-	int pos;
-
-	if (n <= 0)
+	if (!position)
 	{
-		return (-1);
+		_putchar('0');
 	}
-
-	logTwoN = log(n) / log(2);
-
-	floorLogTwoN = (int) logTwoN;
-
-	pos = floorLogTwoN + 1;
-
-	return (pos);
 }
-
