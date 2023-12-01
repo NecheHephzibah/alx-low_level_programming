@@ -10,6 +10,8 @@ int copy_file(char *source_path, char *destination_path);
 
 /**
  * main - function that starts every C programming.
+ * @ac: argument count, counts the total number of arguments
+ * @av: argument vector, an array of all the arguments
  * Return: 0 (Always successful).
  */
 
@@ -17,7 +19,7 @@ int main(int ac, char **av)
 {
 	ssize_t n;
 
-	if (ac != 2)
+	if (ac != 3)
 	{
 		dprintf(2, "Usage: %s cp file_from file_to\n", av[0]);
 		exit(1);
