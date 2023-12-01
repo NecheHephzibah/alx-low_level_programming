@@ -113,7 +113,7 @@ void close_files(int source_fd, int destination_fd)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", source_fd);
 		exit(100);
 	}
-	if (close(destination_fd == -1))
+	if (close(destination_fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", destination_fd);
 		exit(100);
