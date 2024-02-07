@@ -1,0 +1,1 @@
+This directory contains tasks on hash tables. A hash function is a mathematical function that takes an input (or 'message') and returns a fixed-size string of bytes. The output, typically a hash value or hash code, is often a unique representation of the input data.
