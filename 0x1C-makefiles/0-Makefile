@@ -1,0 +1,4 @@
+all: output
+
+output: school.c
+	gcc school.c main.c -o school
