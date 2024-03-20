@@ -1,7 +1,7 @@
 #include "m.h"
 
 /**
- * main - Entry point
+ * main - Entry point of the whole function
  *
  * Return: Always 
  */
