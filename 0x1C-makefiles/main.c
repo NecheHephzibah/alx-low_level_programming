@@ -1,9 +1,9 @@
 #include "m.h"
 
 /**
- * main - Entry point of the whole function
+ * main - Entry point
  *
- * Return: Always 
+ * Return: Always
  */
 int main(void)
 {

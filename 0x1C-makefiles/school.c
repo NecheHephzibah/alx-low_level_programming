@@ -3,7 +3,7 @@
 /**
  * print_school
  *
- * Return: Nothing to return
+ * Return: Nothing
  */
 void print_school(void)
 {
